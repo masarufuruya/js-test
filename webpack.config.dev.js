@@ -3,12 +3,12 @@ var webpack = require('webpack')
 module.exports = [
   {
     entry: {
-	'application': [
-          //ページ単位のJSを読み込む
-	  //依存関係はページ単位JS内でES6モジュールのimportを利用
-          './src/dashboard.js',
-	  './src/evaluations.js'
-        ]
+      'application': [
+        //ページ単位のJSを読み込む
+        //依存関係はページ単位JS内でES6モジュールのimportを利用
+        './src/dashboard.js',
+        './src/evaluations.js'
+      ]
     },
     devtool: 'source-map',
     output: {
@@ -36,4 +36,3 @@ module.exports = [
     },
   }
 ]
-
